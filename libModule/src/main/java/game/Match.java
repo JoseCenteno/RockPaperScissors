@@ -21,7 +21,7 @@ public class Match {
 	/** The draw. */
 	private Integer draw = 0;	
 		
-
+	
 	/**
 	 * Play.
 	 */
