@@ -27,5 +27,6 @@ public class App
         									  move.getWinner().toString()) );        		
         	}
         }
+        input.close();
     }
 }
