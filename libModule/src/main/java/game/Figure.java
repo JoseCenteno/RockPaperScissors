@@ -18,7 +18,7 @@ public class Figure {
 	 * @return the name
 	 */
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	/**
@@ -27,7 +27,7 @@ public class Figure {
 	 * @return the index
 	 */
 	public Integer getIndex() {
-		return index;
+		return this.index;
 	}
 
 	/**
@@ -80,6 +80,7 @@ public class Figure {
 		if (f == null) {
 			return false;
 		}
+		// a Figure wins only to the previous index 
 		return (f.index + 1) % 3 == this.getIndex();
 	}
 }

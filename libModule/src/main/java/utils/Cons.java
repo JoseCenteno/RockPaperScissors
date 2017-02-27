@@ -6,4 +6,6 @@ public class Cons {
 	public static final Integer INDEX_SCISSORS = 2;
 	
 	public static final String[] FIGURE_NAME = {"ROCK","PAPER","SCISSORS"};
+	
+	public static final Integer ITERATIONS = 100;
 }

@@ -24,7 +24,7 @@ public class Move {
 	 * @return the figure 1
 	 */
 	public Figure getFigure1() {
-		return figure1;
+		return this.figure1;
 	}
 
 
@@ -35,7 +35,7 @@ public class Move {
 	 * @return the figure 2
 	 */
 	public Figure getFigure2() {
-		return figure2;
+		return this.figure2;
 	}
 
 
@@ -46,7 +46,7 @@ public class Move {
 	 * @return the winner
 	 */
 	public Integer getWinner() {
-		return winner;
+		return this.winner;
 	}
 
 
@@ -55,16 +55,17 @@ public class Move {
 	 * Go.
 	 */
 	public void go() {
-		figure1 = new Figure();
-
-		figure2 = new Figure(Cons.INDEX_ROCK);
-
+		//Figure 1 random
+		this.figure1 = new Figure();
+		//Figure 2 always Rock
+		this.figure2 = new Figure(Cons.INDEX_ROCK);
+		//Get the winner
 		if (figure1.draw(figure2)) {
-			winner = 0;
+			this.winner = 0;
 		} else if (figure1.winTo(figure2)) {
-			winner = 1;
+			this.winner = 1;
 		} else
-			winner = 2;
+			this.winner = 2;
 	}
 	
 	
