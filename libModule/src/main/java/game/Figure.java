@@ -48,7 +48,7 @@ public class Figure {
 	 */
 	public Figure(Integer index) {
 
-		this.name = Cons.FIGURE_NAME[0];
+		this.name = Cons.FIGURE_NAME[index];
 
 		this.index = index;
 
